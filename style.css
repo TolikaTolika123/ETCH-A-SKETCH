@@ -1,0 +1,42 @@
+:root {
+  --pixel-column: 16;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  border: 1px solid #808e9b;
+  display: grid;
+  grid-template-columns: repeat(var(--pixel-column), 1fr);
+
+  width: 800px;
+  height: 800px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pixel {
+  border: 1px solid #d2dae2;
+}
+
+.colored {
+  background-color: #000;
+}
+
+.clearing__button {
+  margin: 780px 0 0 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
+  cursor: pointer;
+}
